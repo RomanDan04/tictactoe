@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <table class="main">
+        <tr class="main__row">
+            <td class="main__item" style="border-radius: 10px 0 0 0;" onclick="selCell(this)">
+                <div class="main__icon">
+                    <i class="fa fa-circle-o"></i>
+                </div>
+                <div class="main__icon">
+                    <i class="fa fa-times"></i>
+                </div>
+            </td>
+            <td class="main__item" onclick="selCell(this)">
+                <div class="main__icon">
+                    <i class="fa fa-circle-o"></i>
+                </div>
+                <div class="main__icon">
+                    <i class="fa fa-times"></i>
+                </div>
+            </td>
+            <td class="main__item" style="border-radius: 0 10px 0 0;" onclick="selCell(this)">
+                <div class="main__icon">
+                    <i class="fa fa-circle-o"></i>
+                </div>
+                <div class="main__icon">
+                    <i class="fa fa-times"></i>
+                </div>
+            </td>
+        </tr>
+        <tr class="main__row">
+            <td class="main__item" onclick="selCell(this)">
+                <div class="main__icon">
+                    <i class="fa fa-circle-o"></i>
+                </div>
+                <div class="main__icon">
+                    <i class="fa fa-times"></i>
+                </div>
+            </td>
+            <td class="main__item" onclick="selCell(this)">
+                <div class="main__icon">
+                    <i class="fa fa-circle-o"></i>
+                </div>
+                <div class="main__icon">
+                    <i class="fa fa-times"></i>
+                </div>
+            </td>
+            <td class="main__item" onclick="selCell(this)">
+                <div class="main__icon">
+                    <i class="fa fa-circle-o"></i>
+                </div>
+                <div class="main__icon">
+                    <i class="fa fa-times"></i>
+                </div>
+            </td>
+        </tr>
+        <tr class="main__row">
+            <td class="main__item" style="border-radius: 0 0 0 10px;" onclick="selCell(this)">
+                <div class="main__icon">
+                    <i class="fa fa-circle-o"></i>
+                </div>
+                <div class="main__icon">
+                    <i class="fa fa-times"></i>
+                </div>
+            </td>
+            <td class="main__item" onclick="selCell(this)">
+                <div class="main__icon">
+                    <i class="fa fa-circle-o"></i>
+                </div>
+                <div class="main__icon">
+                    <i class="fa fa-times"></i>
+                </div>
+            </td>
+            <td class="main__item" style="border-radius: 0 0 10px 0;" onclick="selCell(this)">
+                <div class="main__icon">
+                    <i class="fa fa-circle-o"></i>
+                </div>
+                <div class="main__icon">
+                    <i class="fa fa-times"></i>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="refresh" onclick="refresh()">
+        <i class="fa fa-refresh"></i>
+    </div>
+
+    <div class="space" id="space">
+        <div class="line"></div>
+        <div class="popup" id="popup">Winner is player with: X</div>
+    </div>
+
+    <div class="walk" id="walk">Mersul jucatorului cu: X</div>
+
+    <!--scripts-->
+    <script src="script.js"></script>
+</body>
+</html>
